@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0D1C2E;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 1.3rem; 
+    
+}
+.container-text{
+    display: flex;
+   justify-content: space-between;
+    background-color: transparent;
+    border: 2px solid #83E5F8;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 24px;
+    width: 80%;
+    height: 20%;
+ 
+}
+.container-p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container-text button img{
+    width: 98%;
+    position: absolute;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.container-type-text{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.container-select-completion{
+    text-align: center;
+    margin-top: 40px;
+}
+.container-text .container-button .add{
+   background-color: #FFC700;
+   position: relative;
+   width: 40px;
+   height: 40px;
+   padding: 20px;
+   margin: 0;
+   vertical-align:middle;
+   display: inline-block;
+   border-radius: 100%;
+  
+}
+.container-text .container-button{
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.container-select{
+    display: flex;
+    flex: auto;
+    justify-content: space-evenly;
+    margin: 20px 10px 30px;
+}
+.completed-task{
+    display: flex;
+    flex: auto;
+    justify-content: space-evenly;
+    margin: 20px -20px 30px;
+}
+.container-paragraph {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.switch2{
+  align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.switch {
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+} 
+
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 20px;
+  background: #d0d0d0;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+
+ content: "";
+ position: absolute;
+ top: 4px;
+ left: 4px;
+ width: 12px;
+ height: 12px;
+ background: #5e5959;
+ border-radius: 90px;
+ transition: 0.3s;
+
+}
+
+input:checked + label {
+ 
+  background: #09A321;
+
+}
+
+input:checked + label:after {
+
+  background: #ffffff;  
+  left: calc(100% - 4px);
+  transform: translateX(-100%);
+
+}
+
+label:active:after {
+
+  width: 15px;
+
+}
+
+main .add-button button{
+    background-color: #ED3AFC;
+    text-align: center;
+    height: 40px;
+    width: 350px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    display: block;
+    margin:auto;
+    margin-top: 50px;
+
+}
+.container-date{
+    height: 100px;
+    color:#ffffff;
+    
+}
+
+.container-date p{
+  
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 30%;
+}
+.container-date #time{
+    background-color:transparent;
+
+    height: 100%;
+    width: 40%;
+    border-radius: 30px;
+    color:#0D1C2E;
+    display: block;
+    margin:auto;
+ 
+}
+input[type=time]::-webkit-datetime-edit-fields-wrapper {
+    display: flex;
+}
+/* The space between the fields - between hour and minute, the minute and 
+second, second and am/pm */
+input[type=time]::-webkit-datetime-edit-text {
+    padding: 19px 2px;
+   
+  }
+  
+
+  
+  /* Hour */
+  input[type=time]::-webkit-datetime-edit-hour-field {
+    background-color: #f2f4f5;
+    border-radius: 15%;
+    padding: 19px 13px;
+  }
+  
+  /* Minute */
+  input[type=time]::-webkit-datetime-edit-minute-field {
+    background-color: #f2f4f5;
+    border-radius: 15%;
+    padding: 19px 13px;
+  }
+  
+  /* AM/PM */
+  input[type=time]::-webkit-datetime-edit-ampm-field {
+    background-color: #F1C40F;
+    border-radius: 15%;
+    color: #0D1C2E;
+    padding: 19px 13px;
+    
+  }
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 20%;
+    
+  }
+  
+  
+/* 'X' button for resetting/clearing time */
+input[type=time]::-webkit-clear-button {
+    display: none;
+  }
+  
+  /* Up/Down arrows for incrementing/decrementing the value */
+  input[type=time]::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+.footer-gradient {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Altura do gradient no final da página */
+    background-image: linear-gradient(to top, #013B5B, #0D1C2E); /*gradient de baixo pra cima*/
+}
