@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0D1C2E;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 1.3rem; 
+    margin: 0 ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+    
+}
+
+
+.container-button .add{
+    background-color: #FFC700;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    margin: 0;
+    vertical-align:middle;
+    display: inline-block;
+    border-radius: 100%;
+   
+ }
+ .container-button button img{
+    width: 98%;
+    position: absolute;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.container-button{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.container-button button{
+    cursor: pointer;
+ 
+}
+.footer-gradient {
+   /* z-index: -1;*/
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+    min-height: max-content;
+    height: 200px;
+   
+   background-image: linear-gradient(to top, #013B5B, #0D1C2E); /*gradient de baixo pra cima*/
+  }

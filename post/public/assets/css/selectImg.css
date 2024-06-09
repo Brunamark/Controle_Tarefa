@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0D1C2E;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 1.3rem; 
+    margin: 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header{
+    height: 10vh;
+    max-width: 640px;
+    min-width: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header .button-next{
+    min-width: 70px;
+    max-width: 70px;
+    height: 4vh;
+}
+button{
+   height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #FFC700;
+    font-family: inherit;
+    color: #0D1C2E;
+}
+.exclude img .cls-1{fill:#FFFFFF;}
+header .exclude{
+    min-width: 70px;
+    max-width: 70px;
+    height: 3vh;
+    
+   
+    img{
+        
+        height: 3vh;
+        
+      
+        
+    }
+    
+}
+.container{
+    max-height: 80vh;
+    min-height: 80vh;
+    max-width: 640px;
+    min-width: 40vh;
+   /* display: flex;
+    flex-direction: column;
+    align-items: center;  */
+}
+.main-photo{
+    height: 40vh;
+    width: 100%;
+
+    img{
+        max-width: 40vh;
+        min-width: 40vh;
+        border-radius: 2px;
+        width: 100%;
+        min-height: 40vh;
+     
+    }
+}
+.wrapper{
+    height: 30vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 0.4em; /*distance between photos on grid */
+    grid-row-gap: 1em;
+    overflow-y:auto;
+    margin-top: 10px;
+   
+    
+
+    .wrapper-item{
+        max-height:10vh;
+        max-width: 10vh;
+        min-height: 10vh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        img{
+            object-fit: cover;
+            min-height: 10vh;
+            max-height:10vh;
+            max-width: 10vh;
+            width: 100%;
+            height: 100%;
+            border-radius: 2px;
+             
+        }
+        .selected{
+            border: 3px solid #FFC700;
+        }
+    }
+
+}
+/*
+.wrapper .firstPhoto{
+    width: 100%;
+    height: 10vh;
+    background-color: aqua;
+    margin-top: 10px;
+}
+.wrapper .secondPhoto{
+    width: 100%;
+    height: 10vh;
+    background-color: yellow;
+    margin-top: 10px;
+}
+.wrapper .thirdPhoto{
+    width: 100%;
+    height: 10vh;
+    background-color: pink;
+    margin-top: 10px;
+}
+.wrapper .fourthPhoto{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+.wrapper .fifithPhoto{
+    width: 100%;
+    height: 10vh;
+    background-color: green;
+}
+.wrapper .sixthPhoto{
+    width: 100%;
+    height: 10vh;
+    background-color: purple;
+}*/
+.footer-gradient {
+     z-index: -1;
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+     margin-top: auto;
+     min-height: max-content;
+     height: 10vh;
+    
+    background-image: linear-gradient(to top, #013B5B, #0D1C2E); /*gradient de baixo pra cima*/
+   }
