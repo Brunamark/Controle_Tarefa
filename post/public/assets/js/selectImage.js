@@ -1,7 +1,7 @@
-import { SelectImage } from "../../services/selectImage-service.js";
+import { SelectImageService } from "../../services/selectImage-service.js";
 
 document.addEventListener('DOMContentLoaded', async function () {
-    const selectImage = new SelectImage();
+    const selectImage = new SelectImageService();
 
     async function selectImages(pos) {
         return await selectImage.getPhoto(pos);
@@ -20,27 +20,30 @@ document.addEventListener('DOMContentLoaded', async function () {
         img.setAttribute("src", photo);
         div.appendChild(img);
         sectionPhotos.append(div);
-        console.log("aux:", aux);
         div.addEventListener('click', async()=>{
-            console.log(`Div at position ${pos} clicked!`);
+            //console.log(`Div at position ${pos} clicked!`);
             var sectionPhotos = document.querySelector('.main-photo'); 
             var photo = document.querySelector(".main-photo>img");
             var photoSelected = document.querySelector(`[id="${pos}"]>img`);
-            console.log('photoselected',photoSelected);
-            console.log("aux:", aux);
-            console.log("pos:", pos);
+            //console.log('photoselected',photoSelected);
+          //  const photoItem = document.querySelector('.wrapper-item');
             if(photo){
                 const photoUrl = await selectImages(pos);
                 photo.setAttribute("src", photoUrl ); 
+                const photoBefore = document.querySelector(`[id="${aux}"]>img`);
+                photoBefore.removeAttribute("class", "selected");
                 photoSelected.setAttribute("class","selected");
                 sectionPhotos.appendChild(photo);
+                aux=pos;
             }else{
                 var photo = document.createElement("img");
+                aux=pos;
                 const photoUrl = await selectImages(pos);
                 photo.setAttribute("src", photoUrl ); 
                 photoSelected.setAttribute("class","selected");
                 sectionPhotos.appendChild(photo);
             }
+          //  console.log("url selected: ",selectImage.getUrlPhoto());
         });
     });
   

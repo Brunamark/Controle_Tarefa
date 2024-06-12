@@ -1,6 +1,6 @@
 export class CommentsService{
     constructor() {
-        this.urlBase = 'http://localhost:3000/likes';
+        this.urlBase = 'http://localhost:3000/comments';
       }
     async getComments(){
         try{

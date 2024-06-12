@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0D1C2E;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 1.3rem; 
+    margin: 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+header{
+    min-width: 40vh;
+    max-width: 640px;
+    text-align: center;
+    max-height: 10vh;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  /*  justify-content: center;*/
+        
+    }
+    
+    .arrow-back{
+        min-width: 5vh;
+        max-width: 5vh;
+        margin-left: 220px;
+        img{
+            justify-self: right;
+            min-width: 3vh;
+            max-width: 3vh;
+            opacity: 40%;
+        }
+    
+        
+}
+.comments-container{
+    overflow-y: auto;
+    min-width: 40vh;
+    max-width: 640px;
+    max-height: 70vh;
+    min-height: 70vh;
+
+    
+    .section-comment{
+        border: 1px solid #ED3AFC;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 30px 0px 30px;
+        max-height: 10vh;
+        min-height: 10vh;
+        min-width: 38vh;
+        max-width: 38vh;
+    }
+    img{
+        min-height: 8vh;
+        max-height: 8vh;
+        max-width: 8vh;
+        min-width: 8vh;
+        margin-left: 10px;
+
+        border-radius: 100%;
+    }
+    .name-comment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .comment-user{
+            min-width: 15vh;
+            max-width: 15vh;
+            margin-left: 10px;
+            p{
+                font-size: 1.0rem;
+            }
+        }
+        .name-user{
+            min-width: 15vh;
+            max-width: 15vh;
+            margin-left: 10px;
+            p{
+                color:#83E5F8;
+                font-weight: 800;
+            }
+        }
+    }
+}
+div.container {
+   
+	border-radius: 4px;
+    font-style: inherit;
+    font-size: 1.3rem;
+    max-width: 30vh;
+    min-width: 30vh;
+    max-height: 10vh;
+    min-height: 10vh;
+    padding: 20px;
+
+}
+
+:root {
+	--omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+	--omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+	--omrs-color-ink-medium-contrast: #83E5F8;
+	--omrs-color-interaction: #83E5F8;
+	--omrs-color-interaction-minus-two:  #0D1C2E;
+	--omrs-color-bg-low-contrast: #0D1C2E;
+	--omrs-color-ink-high-contrast: #83E5F8;
+	--omrs-color-bg-high-contrast:  #0D1C2E;
+    --omrs-color-ink-letter-high-contrast: #fff;
+	
+}
+div.omrs-input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.omrs-input-underlined > input,
+.omrs-input-filled > input {
+	border: none;
+	border-bottom: 0.01rem solid var(--omrs-color-ink-medium-contrast);
+	width: 100%;
+	min-height: 5vh;
+	/*font-size: 1.0625rem;*/
+    font-size: 1.2rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+    background-color: #0D1C2E;
+    margin-top: 8px;
+    color:  var(--omrs-color-ink-letter-high-contrast);
+}
+
+.omrs-input-underlined > input:focus,
+.omrs-input-filled > input:focus {
+	outline: none;
+}
+
+.omrs-input-underlined > .omrs-input-label,
+.omrs-input-filled > .omrs-input-label {
+	position: absolute;
+	top: 0.9375rem;
+	left: 0.875rem;
+	line-height: 147.6%;
+	color:var(--omrs-color-ink-medium-contrast);
+	transition: top .2s;
+}
+
+.omrs-input-underlined > svg,
+.omrs-input-filled > svg {
+	position: absolute;
+	top: 0.9375rem;
+	right: 0.875rem;
+	fill: var(--omrs-color-ink-medium-contrast);
+}
+
+.omrs-input-underlined > .omrs-input-helper,
+.omrs-input-filled > .omrs-input-helper {
+	font-size: 0.9375rem;
+	color: var(--omrs-color-ink-medium-contrast);
+	letter-spacing: 0.0275rem;
+	margin: 0.125rem 0.875rem;
+}
+
+.omrs-input-underlined > input:hover,
+.omrs-input-filled > input:hover {
+	/*background: var(--omrs-color-interaction-minus-two);*/
+	border-color: var(--omrs-color-ink-high-contrast);
+}
+
+.omrs-input-underlined > input:focus + .omrs-input-label,
+.omrs-input-underlined > input:valid + .omrs-input-label,
+.omrs-input-filled > input:focus + .omrs-input-label,
+.omrs-input-filled > input:valid + .omrs-input-label {
+	top: 0;
+	font-size: 0.9375rem;
+	margin-bottom: 32px;;
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus + .omrs-input-label,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label {
+	color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus {
+	border-color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus ~ svg,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus ~ svg {
+	fill: var(--omrs-color-ink-high-contrast);
+}
+
+/** DISABLED **/
+
+.omrs-input-underlined > input:disabled {
+	background: var(--omrs-color-bg-low-contrast);
+	cursor: not-allowed;
+}
+
+.omrs-input-underlined > input:disabled + .omrs-input-label,
+.omrs-input-underlined > input:disabled ~ .omrs-input-helper{
+	color: var(--omrs-color-ink-low-contrast);
+}
+
+.omrs-input-underlined > input:disabled ~ svg {
+	fill: var(--omrs-color-ink-low-contrast);
+}
+.input-comment{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    min-width: 10vh;
+    max-width: 10vh;
+    .share{
+        min-width: 8vh;
+        max-width: 8vh;
+        min-height: 4vh;
+        max-height: 4vh;
+        font-style: inherit;
+        background-color: #FFC700;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        justify-self: end;
+
+    }
+
+}
+.footer-gradient {
+    /* z-index: -1;*/
+    position: fixed;
+   /* max-width: 100%;*/
+    bottom: 0;
+    margin-top: auto;
+    min-height: 8vh;
+    max-height: 8vh;
+    max-width: 640px;
+    min-width: 640px;
+
+    background-image: linear-gradient(to top, #013B5B, #0D1C2E);
+    /*gradient de baixo pra cima*/
+}
